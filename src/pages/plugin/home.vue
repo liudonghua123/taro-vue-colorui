@@ -1,9 +1,9 @@
-<template name="components">
-	<view>
-		<scroll-view scroll-y class="page">
+<template>
+	<view class="page">
+		<scroll-view scroll-y>
 			<cu-custom bgImage="https://image.weilanwl.com/color2.0/plugin/cjkz2329.jpg">
 				<block slot="content">
-					<image src="/static/cjkz.png" mode="aspectFill" style="width: 240upx;height: 60upx;"></image>
+					<image src="../../static/cjkz.png" mode="aspectFill" style="width: 240rpx;height: 60rpx;"></image>
 				</block>
 			</cu-custom>
 			<view class="cu-card">
@@ -21,7 +21,7 @@
 
 <script>
 	export default {
-		name: "components",
+		name: "plugin",
 		data() {
 			return {
 				StatusBar: this.StatusBar,
@@ -51,7 +51,7 @@
 		},
 		methods: {
 			toChild(e) {
-				uni.navigateTo({
+				wx.navigateTo({
 					url: e.currentTarget.dataset.url
 				})
 			},
@@ -66,37 +66,37 @@
 
 	.cardTitle {
 		color: #fff;
-		padding: 90upx 60upx;
-		font-size: 40upx;
+		padding: 90rpx 60rpx;
+		font-size: 40rpx;
 		font-weight: 300;
 		transform: skew(-10deg, 0deg);
 		position: relative;
-		text-shadow: 0px 0px 6upx rgba(0, 0, 0, 0.3)
+		text-shadow: 0px 0px 6rpx rgba(0, 0, 0, 0.3)
 	}
 
 	.cardTitle::before {
 		content: "";
 		position: absolute;
-		width: 60upx;
-		height: 6upx;
-		border-radius: 20upx;
+		width: 60rpx;
+		height: 6rpx;
+		border-radius: 20rpx;
 		background-color: #fff;
 		display: block;
-		top: 60upx;
-		left: 50upx;
+		top: 60rpx;
+		left: 50rpx;
 		transform: skew(10deg, 0deg);
 	}
 
 	.cardTitle::after {
 		content: "";
 		position: absolute;
-		width: 140upx;
-		border-radius: 6upx;
-		height: 24upx;
+		width: 140rpx;
+		border-radius: 6rpx;
+		height: 24rpx;
 		background-color: #fff;
 		display: block;
-		bottom: 76upx;
-		left: 90upx;
+		bottom: 76rpx;
+		left: 90rpx;
 		transform: skew(10deg, 0deg);
 		opacity: 0.1;
 	}

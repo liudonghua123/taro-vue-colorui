@@ -3,7 +3,7 @@
 		<scroll-view scroll-y class="DrawerPage" :class="modalName=='viewModal'?'show':''">
 			<cu-custom bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block>
 				<block slot="content">全屏抽屉</block>
-			</cu-custom>			
+			</cu-custom>
 			<view class='padding margin text-center'>
 				<view class='cu-btn bg-green lg block shadow radius margin-xl' @tap="showModal" data-target="viewModal">
 					打开抽屉
@@ -17,7 +17,7 @@
 					</view>
 				</view>
 			</view>
-			
+
 			<view class='padding margin text-center'>
 				<view class='cu-btn bg-green lg block shadow radius margin-xl' @tap="showModal" data-target="viewModal">
 					打开抽屉
@@ -81,7 +81,7 @@
 	.DrawerPage.show {
 		transform: scale(0.9, 0.9);
 		left: 85vw;
-		box-shadow: 0 0 60upx rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 60rpx rgba(0, 0, 0, 0.2);
 		transform-origin: 0;
 	}
 
@@ -95,7 +95,7 @@
 		opacity: 0;
 		pointer-events: none;
 		transition: all 0.4s;
-		padding: 100upx 0;
+		padding: 100rpx 0;
 	}
 
 	.DrawerWindow.show {
@@ -111,13 +111,13 @@
 		right: 0;
 		top: 0;
 		color: transparent;
-		padding-bottom: 30upx;
+		padding-bottom: 30rpx;
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
 		background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.6));
 		letter-spacing: 5px;
-		font-size: 50upx;
+		font-size: 50rpx;
 		opacity: 0;
 		pointer-events: none;
 		transition: all 0.4s;
@@ -131,9 +131,9 @@
 	}
 
 	.DrawerPage .cu-bar.tabbar .action button.cuIcon {
-		width: 64upx;
-		height: 64upx;
-		line-height: 64upx;
+		width: 64rpx;
+		height: 64rpx;
+		line-height: 64rpx;
 		margin: 0;
 		display: inline-block;
 	}
@@ -153,12 +153,12 @@
 
 	.DrawerPage .nav .cu-item.cur::after {
 		content: "";
-		width: 10upx;
-		height: 10upx;
+		width: 10rpx;
+		height: 10rpx;
 		background-color: currentColor;
 		position: absolute;
-		bottom: 10upx;
-		border-radius: 10upx;
+		bottom: 10rpx;
+		border-radius: 10rpx;
 		left: 0;
 		right: 0;
 		margin: auto;

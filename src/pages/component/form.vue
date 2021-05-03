@@ -364,7 +364,7 @@
 				}
 			},
 			ChooseImage() {
-				uni.chooseImage({
+				wx.chooseImage({
 					count: 4, //默认9
 					sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
 					sourceType: ['album'], //从相册选择
@@ -378,13 +378,13 @@
 				});
 			},
 			ViewImage(e) {
-				uni.previewImage({
+				wx.previewImage({
 					urls: this.imgList,
 					current: e.currentTarget.dataset.url
 				});
 			},
 			DelImg(e) {
-				uni.showModal({
+				wx.showModal({
 					title: '召唤师',
 					content: '确定要删除这段回忆吗？',
 					cancelText: '再看看',

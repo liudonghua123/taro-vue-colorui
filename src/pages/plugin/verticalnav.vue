@@ -13,13 +13,13 @@
 			</swiper-item>
 		</swiper>
 		<view class="VerticalBox">
-			<scroll-view class="VerticalNav nav" scroll-y scroll-with-animation :scroll-top="verticalNavTop" style="height:calc(100vh - 375upx)">
+			<scroll-view class="VerticalNav nav" scroll-y scroll-with-animation :scroll-top="verticalNavTop" style="height:calc(100vh - 375rpx)">
 				<view class="cu-item" :class="index==tabCur?'text-green cur':''" v-for="(item,index) in list" :key="index" @tap="TabSelect"
 				 :data-id="index">
 					Tab-{{item.name}}
 				</view>
 			</scroll-view>
-			<scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 375upx)"
+			<scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 375rpx)"
 			 :scroll-into-view="'main-'+mainCur" @scroll="VerticalMain">
 				<view class="padding-top padding-lr" v-for="(item,index) in list" :key="index" :id="'main-'+index">
 					<view class="cu-bar solid-bottom bg-white">
@@ -122,7 +122,7 @@
 			};
 		},
 		onLoad() {
-			uni.showLoading({
+			wx.showLoading({
 				title: '加载中...',
 				mask: true
 			});
@@ -136,7 +136,7 @@
 			this.listCur = list[0];
 		},
 		onReady() {
-			uni.hideLoading()
+			wx.hideLoading()
 		},
 		methods: {
 			TabSelect(e) {
@@ -146,13 +146,13 @@
 			},
 			VerticalMain(e) {
 				// #ifdef MP-ALIPAY
-				   return false  //支付宝小程序暂时不支持双向联动 
+				   return false  //支付宝小程序暂时不支持双向联动
 				// #endif
 				let that = this;
 				let tabHeight = 0;
 				if (this.load) {
 					for (let i = 0; i < this.list.length; i++) {
-						let view = uni.createSelectorQuery().select("#main-" + this.list[i].id);
+						let view = wx.createSelectorQuery().select("#main-" + this.list[i].id);
 						view.fields({
 							size: true
 						}, data => {
@@ -184,7 +184,7 @@
 	}
 
 	.VerticalNav.nav {
-		width: 200upx;
+		width: 200rpx;
 		white-space: initial;
 	}
 
@@ -204,13 +204,13 @@
 
 	.VerticalNav.nav .cu-item.cur::after {
 		content: "";
-		width: 8upx;
-		height: 30upx;
-		border-radius: 10upx 0 0 10upx;
+		width: 8rpx;
+		height: 30rpx;
+		border-radius: 10rpx 0 0 10rpx;
 		position: absolute;
 		background-color: currentColor;
 		top: 0;
-		right: 0upx;
+		right: 0rpx;
 		bottom: 0;
 		margin: auto;
 	}

@@ -66,10 +66,10 @@
 		},
 		onReady() {
 			let that = this;
-			uni.createSelectorQuery().select('.indexBar-box').boundingClientRect(function(res) {
+			wx.createSelectorQuery().select('.indexBar-box').boundingClientRect(function(res) {
 				that.boxTop = res.top
 			}).exec();
-			uni.createSelectorQuery().select('.indexes').boundingClientRect(function(res) {
+			wx.createSelectorQuery().select('.indexes').boundingClientRect(function(res) {
 				that.barTop = res.top
 			}).exec()
 		},
@@ -124,7 +124,7 @@
 
 <style>
 	page {
-		padding-top: 100upx;
+		padding-top: 100rpx;
 	}
 
 	.indexes {
@@ -135,35 +135,35 @@
 		position: fixed;
 		right: 0px;
 		bottom: 0px;
-		padding: 20upx 20upx 20upx 60upx;
+		padding: 20rpx 20rpx 20rpx 60rpx;
 		display: flex;
 		align-items: center;
 	}
 
 	.indexBar .indexBar-box {
-		width: 40upx;
+		width: 40rpx;
 		height: auto;
 		background: #fff;
 		display: flex;
 		flex-direction: column;
-		box-shadow: 0 0 20upx rgba(0, 0, 0, 0.1);
-		border-radius: 10upx;
+		box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
+		border-radius: 10rpx;
 	}
 
 	.indexBar-item {
 		flex: 1;
-		width: 40upx;
-		height: 40upx;
+		width: 40rpx;
+		height: 40rpx;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 24upx;
+		font-size: 24rpx;
 		color: #888;
 	}
 
 	movable-view.indexBar-item {
-		width: 40upx;
-		height: 40upx;
+		width: 40rpx;
+		height: 40rpx;
 		z-index: 9;
 		position: relative;
 	}
@@ -173,25 +173,25 @@
 		display: block;
 		position: absolute;
 		left: 0;
-		top: 10upx;
-		height: 20upx;
-		width: 4upx;
+		top: 10rpx;
+		height: 20rpx;
+		width: 4rpx;
 		background-color: #f37b1d;
 	}
 
 	.indexToast {
 		position: fixed;
 		top: 0;
-		right: 80upx;
+		right: 80rpx;
 		bottom: 0;
 		background: rgba(0, 0, 0, 0.5);
-		width: 100upx;
-		height: 100upx;
-		border-radius: 10upx;
+		width: 100rpx;
+		height: 100rpx;
+		border-radius: 10rpx;
 		margin: auto;
 		color: #fff;
-		line-height: 100upx;
+		line-height: 100rpx;
 		text-align: center;
-		font-size: 48upx;
+		font-size: 48rpx;
 	}
 </style>

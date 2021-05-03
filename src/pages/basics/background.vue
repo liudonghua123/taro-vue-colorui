@@ -78,7 +78,7 @@
 				<text class="cuIcon-title text-blue"></text>图片背景
 			</view>
 		</view>
-		<view class="bg-img bg-mask flex align-center" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg');height: 414upx;">
+		<view class="bg-img bg-mask flex align-center" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg');height: 414rpx;">
 			<view class="padding-xl text-white">
 				<view class="padding-xs text-xxl text-bold">
 					钢铁之翼
@@ -93,7 +93,7 @@
 				<text class="cuIcon-title text-blue"></text>视频背景
 			</view>
 		</view>
-		<view class="bg-video bg-mask flex align-center" style="height: 422upx;">
+		<view class="bg-video bg-mask flex align-center" style="height: 422rpx;">
 			<video src="https://yz.lol.qq.com/v1/assets/videos/aatrox-splashvideo.webm" autoplay loop muted :show-play-btn="false"
 			 :controls="false" objectFit="cover"></video>
 			<cover-view class="padding-xl text-white ">
@@ -105,19 +105,19 @@
 				</cover-view>
 			</cover-view>
 		</view> -->
-		
+
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
 				<text class="cuIcon-title text-blue"></text>透明背景(文字层)
 			</view>
 		</view>
 		<view class="grid col-2">
-			<view class="bg-img padding-bottom-xl" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big10007.jpg');height: 207upx;">
+			<view class="bg-img padding-bottom-xl" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big10007.jpg');height: 207rpx;">
 				<view class="bg-shadeTop padding padding-bottom-xl">
 					上面开始
 				</view>
 			</view>
-			<view class="bg-img padding-top-xl flex align-end" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg');height: 207upx;">
+			<view class="bg-img padding-top-xl flex align-end" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg');height: 207rpx;">
 				<view class="bg-shadeBottom padding padding-top-xl flex-sub">
 					下面开始
 				</view>

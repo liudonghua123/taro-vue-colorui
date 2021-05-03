@@ -47,30 +47,30 @@
 			</view>
 		</view>
 		<view class="margin radius bg-gradual-green shadow-blur">
-			<image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-black response" style="height:100upx"></image>
+			<image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-black response" style="height:100rpx"></image>
 		</view>
 		<view class="margin flex">
 			<view class="bg-black flex-sub margin-right radius shadow-lg">
-				<image src="https://image.weilanwl.com/gif/loading-black.gif" mode="aspectFit" class="gif-black response" style="height:240upx"></image>
+				<image src="https://image.weilanwl.com/gif/loading-black.gif" mode="aspectFit" class="gif-black response" style="height:240rpx"></image>
 			</view>
 			<view class="bg-white flex-sub radius shadow-lg">
-				<image src="https://image.weilanwl.com/gif/loading-white.gif" mode="aspectFit" class="gif-white response" style="height:240upx"></image>
+				<image src="https://image.weilanwl.com/gif/loading-white.gif" mode="aspectFit" class="gif-white response" style="height:240rpx"></image>
 			</view>
 		</view>
 		<view class="margin flex">
 			<view class="bg-gradual-blue flex-sub margin-right radius shadow-lg">
-				<image src="https://image.weilanwl.com/gif/rhomb-black.gif" mode="aspectFit" class="gif-black response" style="height:240upx"></image>
+				<image src="https://image.weilanwl.com/gif/rhomb-black.gif" mode="aspectFit" class="gif-black response" style="height:240rpx"></image>
 			</view>
 			<view class="bg-white flex-sub radius shadow-lg">
-				<image src="https://image.weilanwl.com/gif/rhomb-white.gif" mode="aspectFit" class="gif-white response" style="height:240upx"></image>
+				<image src="https://image.weilanwl.com/gif/rhomb-white.gif" mode="aspectFit" class="gif-white response" style="height:240rpx"></image>
 			</view>
 		</view>
 		<view class="margin flex">
 			<view class="bg-white flex-sub margin-right radius shadow-lg">
-				<image src="https://image.weilanwl.com/gif/loading-1.gif" mode="aspectFit" class="gif-white response" style="height:240upx"></image>
+				<image src="https://image.weilanwl.com/gif/loading-1.gif" mode="aspectFit" class="gif-white response" style="height:240rpx"></image>
 			</view>
 			<view class="bg-black flex-sub radius shadow-lg">
-				<image src="https://image.weilanwl.com/gif/loading-2.gif" mode="aspectFit" class="gif-black response" style="height:240upx"></image>
+				<image src="https://image.weilanwl.com/gif/loading-2.gif" mode="aspectFit" class="gif-black response" style="height:240rpx"></image>
 			</view>
 		</view>
 	</view>
@@ -137,9 +137,9 @@
 
 <style>
 	@import "../../colorui/animation.css";
-	
+
 	image[class*="gif-"] {
-		border-radius: 6upx;
+		border-radius: 6rpx;
 		display: block;
 	}
 </style>

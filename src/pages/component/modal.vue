@@ -273,7 +273,7 @@
 <style>
 	button .cu-tag {
 		position: absolute;
-		top: 8upx;
-		right: 8upx;
+		top: 8rpx;
+		right: 8rpx;
 	}
 </style>

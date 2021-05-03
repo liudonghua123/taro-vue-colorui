@@ -11,26 +11,26 @@
 			<view class="cu-bar tabbar bg-white">
 				<view class="action">
 					<view class="cuIcon-cu-image">
-						<image src="/static/tabbar/basics_cur.png"></image>
+						<image src="../../static/tabbar/basics_cur.png"></image>
 					</view>
 					<view class="text-green">元素</view>
 				</view>
 				<view class="action">
 					<view class="cuIcon-cu-image">
-						<image src="/static/tabbar/component.png"></image>
+						<image src="../../static/tabbar/component.png"></image>
 					</view>
 					<view class="text-gray">组件</view>
 				</view>
 				<view class="action">
 					<view class="cuIcon-cu-image">
-						<image src="/static/tabbar/plugin.png"></image>
+						<image src="../../static/tabbar/plugin.png"></image>
 						<view class="cu-tag badge">99</view>
 					</view>
 					<view class="text-gray">扩展</view>
 				</view>
 				<view class="action">
 					<view class="cuIcon-cu-image">
-						<image src="/static/tabbar/about.png"></image>
+						<image src="../../static/tabbar/about.png"></image>
 						<view class="cu-tag badge"></view>
 					</view>
 					<view class="text-gray">关于</view>
@@ -439,10 +439,10 @@
 
 <style>
 	.box {
-		margin: 20upx 0;
+		margin: 20rpx 0;
 	}
 
 	.box view.cu-bar {
-		margin-top: 20upx;
+		margin-top: 20rpx;
 	}
 </style>
